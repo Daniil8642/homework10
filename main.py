@@ -122,8 +122,8 @@ class Record:
 
     def find_phone(self, phone):
         for p in self.phones:
-            if p.value == phone:
-                return p.value
+            if p == phone:
+                return p
         return None
 
 
