@@ -116,6 +116,9 @@ class Record:
             if phone.value == old_phone:
                 phone.value = new_phone
                 break
+            else:
+                raise ValueError("Phone number not found")
+
 
     def find_phone(self, phone):
         for p in self.phones:
